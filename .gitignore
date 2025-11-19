@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Image editors temp files
+*.psd
+*.sketch
+*.ai
+
+# Node (на всяк випадок, якщо відкриєш проект у VSCode)
+node_modules/

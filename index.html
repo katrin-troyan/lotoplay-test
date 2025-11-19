@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Гурт «Грим та Грім» — українська рок-команда. Найближчі концерти, історія гурту, учасники та форма зв'язку."
+    />
+    <meta
+      name="keywords"
+      content="Грим та Грім, український рок, концерти, музичний гурт"
+    />
+    <title>«Грим та Грім»</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo">G&G</a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">Про гурт</a></li>
+            <li><a href="#concerts" class="nav-link">Концерти</a></li>
+            <li><a href="#galery" class="nav-link">Галерея</a></li>
+            <li><a href="#contacts" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <!-- Burger button -->
+        <button class="burger-btn" aria-label="Open menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile menu modal -->
+    <div class="mobile-menu-backdrop hidden">
+      <div class="mobile-menu">
+        <button class="menu-close-btn" aria-label="Close menu">✖</button>
+        <ul class="mobile-menu-list">
+          <li><a href="#about" class="nav-link">Про гурт</a></li>
+          <li><a href="#concerts" class="nav-link">Концерти</a></li>
+          <li><a href="#galery" class="nav-link">Галерея</a></li>
+          <li><a href="#contacts" class="nav-link">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <!--Hero-->
+      <section class="hero">
+        <div class="container hero-content">
+          <h1 class="hero-title">Гурт «Грим та Грім»</h1>
+
+          <p class="hero-subtitle">
+            Справжній український рок, який гуркоче в серці.
+          </p>
+
+          <p class="hero-text">
+            «Грим та Грім» — це поєднання <span> потужних </span> гітарних
+            рифів, чесних текстів і вибухової енергії сцени. Ми граємо для тих,
+            хто цінує живий звук, свободу та силу музики.
+          </p>
+
+          <a href="#concerts" class="hero-text">
+            <span>Наші концерти</span> - це завжди контакт з залом, драйв і
+            емоції. Приєднуйся до нас на найближчих виступах і відчуй цей саунд
+            наживо!</a
+          >
+          <button class="hero-btn">ЗАКАЗАТИ КВИТОК</button>
+        </div>
+      </section>
+    </main>
+    <!--========== FORM MODAL (ВИНЕСЕНО ЗА HERO!) ==========-->
+    <div class="backdrop" id="modal">
+      <div class="modal">
+        <button class="modal-close" id="close-modal-btn">✕</button>
+        <h2 class="modal-title">Замовити квиток</h2>
+
+        <form id="ticket-form">
+          <label>
+            Ваше ім’я:
+            <input type="text" name="name" required minlength="2" />
+          </label>
+
+          <label>
+            Email:
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Кількість квитків:
+            <input type="number" name="count" min="1" max="10" required />
+          </label>
+
+          <button type="submit" class="modal-submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
